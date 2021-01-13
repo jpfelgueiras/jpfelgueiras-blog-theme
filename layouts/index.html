@@ -1,5 +1,13 @@
 {{ define "main" }}
-<div id="home-jumbotron" class="jumbotron text-center">
-    <h1 class="title">{{ .Site.Title }}</h1>
+<div class="row h-100">
+    <div class="content__left col-md-2">
+        {{ partial "_header.html" . }}
+        {{ partial "_timeline.html" . }}
+        {{ partial "_tags.html" . }}
+    </div>
+    <div class="content__right col-md-10">
+        {{ partial "_footer.html" . }}
+    </div>
 </div>
+
 {{ end }}

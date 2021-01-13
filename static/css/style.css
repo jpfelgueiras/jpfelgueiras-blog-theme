@@ -1,0 +1,17 @@
+.content__left{
+    background-color: #00ab9f;
+    color: white;
+}
+
+.left_div{
+    border-bottom: 1px solid #fff;
+}
+
+#footer{
+    padding-right: 20px;
+}
+html,
+body {
+    height: 100%;
+    
+}
