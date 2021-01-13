@@ -8,7 +8,11 @@
 }
 
 #footer{
-    padding-right: 20px;
+    padding-right: 15px;
+}
+#tags{
+    
+    padding-left: 15px;
 }
 html,
 body {
