@@ -3,6 +3,7 @@
 {{ $logo := $params.logo }}
 <header class="nav_header" >
   <nav class="nav">
+    <!--
     <a href='{{ absLangURL "" }}' class="nav_brand nav_item{{ if eq $centerLogo true }} nav_hide{{ end }}">
       {{- with $logo }}
       <img src="{{ absURL . }}" class="logo">
@@ -35,7 +36,10 @@
         </div>
       </div>
       {{ end }}
-
+-->
+      {{ if $params.IntroDescription }}
+      <h1><a href='{{ absLangURL "" }}'>{{ $params.Author }}</a></h1>
+      {{- end }}
       {{- if eq $centerLogo true }}
       <a href='{{ absLangURL "" }}' class="nav_brand nav_center nav_item">
         <img src="{{ absURL $logo }}" class="logo">
