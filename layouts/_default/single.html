@@ -8,6 +8,7 @@
 {{- $image := $scratch.Get "image" }}
 {{- $bg := (path.Join "images" $image | absLangURL) }}
 <div class="grid-inverse wrap content">
+  {{- partial "sidebar" . }}
   <article class="post_content">
     <h1 class="post_title">{{ .Title }}</h1>
     {{- partial "post-meta" . }}
@@ -25,6 +26,6 @@
     {{ end }}
     {{- partial "i18nlist" . }}
   </article>
-  {{- partial "sidebar" . }}
+  
 </div>
 {{- end }}
